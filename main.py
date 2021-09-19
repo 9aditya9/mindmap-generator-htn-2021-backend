@@ -16,6 +16,8 @@ CORS(app)
 UPLOAD_FOLDER = 'uploads/'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+endpoint = os.environ.get('endpoint')
+subscription_key = os.environ.get('subscription_key')
 
 vision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
@@ -94,6 +96,6 @@ def find():
 
 # everytime I forget to add this line of code
 # it's necessary for running flask apps on repl.it
-if __name__ == "__main__":
-  app.run(host="0.0.0.0", port=8000)
+# if __name__ == "__main__":
+#   app.run(host="0.0.0.0", port=8000)
   
