@@ -1,5 +1,5 @@
 tensorflow-hub
-tensorflow
+tensorflow-cpu
 numpy
 rake_nltk
 spacy
