@@ -1,7 +1,7 @@
 # Works on python 3.8.1, not tested on higher versions.
 
 import tensorflow_hub as hub
-import tensorflow as tf
+import tensorflow_cpu as tf
 # !NOTE: You may receive import errors on first run.
 # Ensure the following 2 lexicons are also imported if you receive errors:
 # stopwords
